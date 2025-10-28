@@ -1,0 +1,192 @@
+.Cartitem{
+    margin: 100px 170px;
+}
+.Cartitem hr{
+    height: 3px;
+    background:#2e2e2e;
+    border: 0;
+}
+.cartitem-main{
+    display: grid;
+    grid-template-columns:0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+    padding: 20px 0px;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 600;
+}
+.cartitems-format{
+    font-size: 17px;
+    font-weight: 500;
+}
+.carticon{
+    height: 62px;
+}
+.carticon-remove{
+    width: 15px;
+    margin: 0px 40px;
+    cursor: pointer;
+}
+.cartitem-quantity{
+    width: 64px;
+    height: 50px;
+    border: 1px solid #ebebeb;
+    background: white;
+}
+.cartitem-down{
+    display: flex;
+    margin: 100px 0px;
+}
+.cartitem-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap: 40px;
+}
+.cartitems-total-item{
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0px;
+
+}
+.cartitem-total button{
+    width: 262px;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: #ff5a5a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.cartitems-promocode{
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+}
+.cartitems-promocode p{
+    color: #555;
+}
+.cartitem-promo-box{
+    width: 504px;
+    margin-top: 15px;
+    padding-left: 20px;
+    height: 58px;
+    background: #eaeaea;
+}
+.cartitem-promo-box input{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    width: 330px;
+    height: 50px
+}
+.cartitem-promo-box button{
+    width: 170px;
+    height: 58px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    background: black;
+}
+
+@media(max-width:1280px){
+    .Cartitem{
+        margin: 60px 50px;
+    }
+    .cartitems-format-main{
+        grid-template-columns: 0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        gap: 20px;
+        padding: 15px 0px;
+        font-size: 15px;
+    }
+    .cartitems-format {
+        font-size: 14px;
+        gap: 10px;
+    }
+    .carticon{
+        height: 50px;
+    }
+    .carticon-remove{
+        margin: auto;
+    }
+   .cartitem-quantity{
+    width: 40px;
+    height: 30px;
+   }
+   .cartitem-down{
+    margin: 80px 0px;
+ flex-direction: column;
+ gap: 80px;
+}
+.cartitem-total{
+    margin: 0;
+}
+.cartitem-total button{
+    max-width: 200px;
+    height: 45px;
+    font-size: 13px;
+}
+.cartitem-promo-box{
+    width: auto;
+    max-width: 500px;
+}
+.cartitem-promo-box input{
+    width: 100%;
+}
+.cartitem-promo-box button{
+    width:120px;
+    margin-left:-125px ;
+}
+}
+@media(max-width:500px){
+    .cartitems-format-main{
+        display: none;
+        grid-template-columns:0.5fr 3fr 0.5fr ;
+        gap: 10px;
+    }
+    .cartitems-format{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 12px;
+        gap: 6px;
+        align-items: center;
+    }
+    .carticon {
+        height: 32px;
+    }
+    .cartitem-quantity {
+        width: 28px;
+        height: 22px;
+        font-size: 12px;
+    }
+    .carticon-remove {
+        width: 10px;
+        margin: 0 10px;
+    }
+    .cartitem-total button {
+        width: 100px;
+        height: 32px;
+        font-size: 10px;
+    }
+    .cartitem-promo-box {
+        padding-left: 6px;
+        height: 32px;
+    }
+    .cartitem-promo-box input {
+        font-size: 10px;
+        height: 20px;
+    }
+    .cartitem-promo-box button {
+        width: 60px;
+        height: 32px;
+        font-size: 10px;
+        margin-left: 0;
+    }
+}
+
+
